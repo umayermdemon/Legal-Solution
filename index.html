@@ -28,6 +28,8 @@
           colors: {
             clifford: '#da373d',
             'primary-color': '#B68C5A',
+            'head-color': '#414040',
+            'desc-color': '#E7E7E7',
           }
         }
       }
@@ -43,8 +45,10 @@
   </style>
 </head>
 <body>
-  <header class="container mx-auto">
-    <div class="navbar mt-6">
+  <header class="max-w-7xl mx-auto">
+    <!-- navbar -->
+    <div>
+    <nav class="navbar mt-6">
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -58,7 +62,7 @@
           <li><a>Contact Us</a></li>
           </ul>
         </div>
-        <img src="images/logo2.png" alt="" class="w-28 h-12 lg:w-auto lg:h-auto">
+        <img src="images/logo2.png" alt="" class="w-28 h-10 lg:w-auto lg:h-auto">
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 font-poppins">
@@ -73,11 +77,33 @@
       <div class="navbar-end">
         <a class=" bg-primary-color font-garamond text-base lg:text-xl font-medium p-2 lg:p-3 rounded-lg text-white">Free Consultation</a>
       </div>
+    </nav>
+    </div>
+   
+    <!-- hero section -->
+    <div 
+       style="background: linear-gradient(180deg, #111 0%, rgba(17, 17, 17, 0.00) 100%), url('/images/banner.png');
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center; " 
+       class="mt-6 lg:mt-12 text-center mx-2 py-12 lg:py-24 rounded-xl h-auto lg:h-[550px]">
+
+      <h1 class="text-white font-garamond text-3xl lg:text-6xl font-bold ">
+        We Provide Effective <br> Legal Solutions
+      </h1>
+      <p class="font-poppins my-8 text-desc-color w-[400px] lg:w-[600px] mx-auto">
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+      </p>
+
+      <div>
+        <input type="text" name="" id="" placeholder="Search your services" class="w-[250px] lg:w-[450px] h-12 rounded-lg outline-none pl-5">
+        <input type="button" value="Search" class="btn bg-primary-color text-white px-6 text-base ml-3">
+      </div>
     </div>
   </header>
+ 
 
   <main>
-
   </main>
 
   <footer>
